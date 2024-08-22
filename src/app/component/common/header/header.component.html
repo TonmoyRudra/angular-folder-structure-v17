@@ -1,0 +1,99 @@
+<nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+  <div
+    class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center"
+  >
+    <a class="navbar-brand brand-logo mr-5"
+      ><img src="./assets/images/bsrm-logo.png" class="mr-2" alt="logo"
+    /></a>
+    <a class="navbar-brand brand-logo-mini"
+      ><img src="./assets/images/bsrmLogo_short.PNG" alt="logo"
+    /></a>
+  </div>
+  <div
+    class="navbar-menu-wrapper d-flex align-items-center justify-content-end"
+  >
+    <!-- <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+      <span class="icon-menu"></span>
+    </button> -->
+    <button
+      class="navbar-toggler align-self-center"
+      type="button"
+      (click)="toggleSidebar()"
+    >
+      <span *ngIf="!showCross" class="icon-menu"></span>
+      <span *ngIf="showCross" class="icon-cross"></span>
+    </button>
+    <!-- Search -->
+    <!-- <ul class="navbar-nav mr-lg-2">
+      <li class="nav-item nav-search d-none d-lg-block">
+        <div class="input-group">
+          <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+            <span class="input-group-text" id="search">
+              <i class="icon-search"></i>
+            </span>
+          </div>
+          <input type="text" class="form-control" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search">
+        </div>
+      </li>
+    </ul> -->
+    <ul class="navbar-nav mr-lg-2">
+      <li class="nav-item nav-search d-none d-lg-block">
+        <div class="input-group">
+          <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+            <span class="projectName"> {{ this.globalService.appTitle }}</span>
+          </div>
+          <!-- <input type="text" class="form-control" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search"> -->
+        </div>
+      </li>
+    </ul>
+    <ul class="navbar-nav mr-lg-2">
+      <!-- <li class="nav-item nav-search ">
+         <dx-select-box style="width: 380px;" class="col-sm-11" [dataSource]="calenderList" valueExpr="calendarId" displayExpr="calendarName"
+            [searchEnabled]="true" [searchExpr]="['calendarName']" [(ngModel)]="selectedCalender.calendarId"
+            (onSelectionChanged)="calenderOptionChange($event)">
+          </dx-select-box>
+      </li> -->
+    </ul>
+    <ul class="navbar-nav navbar-nav-right">
+      <li class="nav-item nav-profile dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          data-toggle="dropdown"
+          id="profileDropdown"
+        >
+          <!-- <img src="../../../../assets/images/face28.jpg" alt="profile"/> -->
+          <!-- <div class="profilePicWithText">{{profileName}}</div> -->
+          <div class="rightTopProfileMenu">
+            <i class="dx-icon-user userIcon"></i>
+            <span>{{ loginHrEmployeeInfo.hR_EmployeeName }}</span>
+            <i class="dx-icon-spindown spinIcon"></i>
+          </div>
+        </a>
+        <div
+          class="dropdown-menu dropdown-menu-right navbar-dropdown"
+          aria-labelledby="profileDropdown"
+        >
+          <div class="proName">({{ sessionUser.logUserID }})</div>
+          <div class="proName">{{ sessionUser.email }}</div>
+          <!-- <a class="dropdown-item" (click)="showProfile()">
+            <i class="ti-user text-primary"></i>
+            Profile
+          </a> -->
+          <a class="dropdown-item" (click)="logout()">
+            <i class="ti-power-off text-primary"></i>
+            Logout
+          </a>
+        </div>
+      </li>
+    </ul>
+
+    <button
+      class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
+      type="button"
+      data-toggle="offcanvas"
+    >
+      <span class="icon-menu"></span>
+    </button>
+  </div>
+</nav>

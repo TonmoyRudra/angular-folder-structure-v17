@@ -1,0 +1,61 @@
+<span>
+  <div class="content-wrapper">
+    <div class="row">
+      <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+          <div class="row">
+            <div class="col-12 col-xl-12 mb-4 mb-xl-0"> 
+              <div class="row">
+                <div class="newButtonAlignrigt" style="flex: 2">
+                  <div>
+                    <span
+                      class="cursor"
+                      style="font-size: 15px;     position: relative;
+                      top: 30px;
+                      right: 40px;"
+                      [routerLink]="['../rosterView']"
+                    >
+                      <img
+                        style="width: 2%"
+                        src="../../../../../assets/images/left-arrow-ash.png"
+                        alt=""
+                      />Back To List
+                    </span>
+                  </div>
+                  <!-- <dx-button type="normal" text="Go back to list"  [routerLink]="['../asset']"></dx-button> -->
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</span>
+
+<dx-popup
+  [showTitle]="true"
+  [width]="600"
+  [height]="350"
+  title="Export Employee Tamplete"
+  [dragEnabled]="true"
+  hideOnOutsideClick="true"
+  [showCloseButton]="true"
+  container=".dx-viewport"
+  fullScreen="false"
+  [(visible)]="popupVisible_exportEmployee"
+>
+  <!-- <dxi-toolbar-item widget="dxButton" toolbar="top" location="after" [options]="closeButtonOptions"> </dxi-toolbar-item> -->
+  <!-- <dxo-position at="center" my="center"   collision="fit"> </dxo-position> -->
+  <div *dxTemplate="let data of 'content'">
+    <dx-scroll-view
+      #scrollView
+      id="scrollview"
+      [scrollByContent]="scrollByContent"
+      [scrollByThumb]="scrollByThumb"
+      [showScrollbar]="scrollbarMode"
+    >
+      <app-employee-export></app-employee-export>
+    </dx-scroll-view>
+  </div>
+</dx-popup>

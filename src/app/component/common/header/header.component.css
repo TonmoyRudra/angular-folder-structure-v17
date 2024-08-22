@@ -1,0 +1,91 @@
+/* .header-top {
+    background-color: #3F51B5;
+    height: 5px;
+}
+
+.header-backgroud {
+    background: url(../../../../assets/images/foot_bottom_bg.png) repeat-y;
+    padding: 7px 0px;
+
+}
+.header-app-name{
+    font-weight: bold;
+    margin-left: 20px;
+    color: white;
+    font-size: 1.8vw;
+    position: relative;
+    top: -4px;
+}
+
+.navigation_container {
+    background: url(../../../../assets/images/rd_bg.png) repeat-x bottom;
+    padding-bottom: 9px;
+} */
+
+.profilePicWithText {
+  background: #3f51b5;
+  padding: 8px 10px;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+}
+.profilePicWithText2 {
+  background: #3f51b5;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding: 6% 0%;
+  margin: 0 39%;
+  border-radius: 122px;
+  font-size: 31px;
+}
+.projectName {
+  color: black;
+  font-weight: bold;
+  font-size: 1.5em;
+  cursor: auto;
+}
+
+.info {
+  margin-top: 9px;
+}
+.info p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.info p span {
+  color: #e91e63;
+}
+
+.proName {
+  font-size: 12px;
+  background: #3f51b545;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+/* .icon-menu::after{
+  content: "\e128";
+} */
+
+.rightTopProfileMenu {
+  color: black;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.userIcon {
+  font-size: 25px;
+  position: relative;
+  top: 0px;
+  padding: 5px;
+  background: #03a9f447;
+  color: #d10074;
+  border-radius: 30px;
+}
+.spinIcon {
+  font-size: 16px;
+  position: relative;
+  top: -1px;
+}

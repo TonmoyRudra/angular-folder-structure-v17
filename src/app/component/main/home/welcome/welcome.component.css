@@ -1,0 +1,16 @@
+.dayPeriod{
+    font-size: 3vw;
+    text-align: center;
+    font-weight: bold;
+    /* background: var(--bs-gray); */
+    color: white;
+    font-family: 'feather';
+    border-radius: 7px;
+}
+
+.main-body {
+    background-image: url("../../../../../assets/images/illustration/undraw_people_re_8spw.svg");
+    background-repeat: no-repeat;
+    background-size: 214px auto;
+    background-position: right bottom;
+   }

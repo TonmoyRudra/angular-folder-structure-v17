@@ -1,0 +1,217 @@
+@import "../node_modules/angular-calendar/css/angular-calendar.css";
+
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0% !important;
+}
+
+.container-fluid {
+  overflow: hidden !important;
+}
+/* You can add global styles to this file, and also import other style files */
+
+.icon-size30 {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+.center {
+  text-align: center;
+}
+
+label {
+  margin-bottom: -10px !important;
+}
+.newButtonAlignrigt {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.requiredMark::after {
+  content: "*";
+  color: red;
+  margin-left: 5px;
+}
+.borderBox-themecolor {
+  border: 1px solid #3f51b5 !important;
+  padding: 30px !important;
+  border-radius: 10px !important;
+  margin-bottom: 7px !important;
+}
+.borderBox {
+  border: 1px solid #dddddd !important;
+  padding: 6px !important;
+  border-radius: 10px !important;
+  margin-bottom: 7px !important;
+}
+
+.themeButton {
+  background: #3f51b5 !important;
+  color: white !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  padding: 0 4% !important;
+  border-radius: 34px !important;
+  font-size: 1em !important;
+}
+.themeButtonGreen {
+  background: #009688 !important;
+  color: white !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  padding: 0 4% !important;
+  border-radius: 34px !important;
+  font-size: 1em !important;
+}
+
+.themeButtonAsh {
+  background: #455a64 !important;
+  color: white !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  padding: 0 4% !important;
+  border-radius: 34px !important;
+  font-size: 1em !important;
+}
+.themeButtonWhite {
+  background: white !important;
+  color: #3f51b5 !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  padding: 0 4% !important;
+  border-radius: 34px !important;
+  font-size: 1em !important;
+  border: 1px solid #3f51b5 !important;
+}
+
+.themeButtonRed {
+  background: white !important;
+  color: #ff1100 !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  padding: 0 4% !important;
+  border-radius: 34px !important;
+  font-size: 1em !important;
+  border: 1px solid #ff1100 !important;
+}
+.themeButton:hover,
+.themeButtonAsh:hover,
+.themeButtonWhite:hover,
+.themeButtonRed:hover {
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+.pl-0 {
+  padding-left: 0;
+}
+dx-text-box,
+dx-select-box,
+dx-drop-down-box,
+dx-date-box,
+dx-number-box,
+dx-tag-box,
+dx-text-area {
+  border-radius: 15px !important;
+}
+
+.content-on-middle {
+  max-width: 480px !important;
+  margin: 0 auto !important;
+  /* min-height: 100vh; */
+  width: 100% !important;
+}
+.addNewBtn_roundshape_theamColor {
+  font-size: 26px;
+  border: 1px solid #dfdfdf;
+  background: #3f51b5;
+  border-radius: 21px;
+  padding: 0 12px;
+  color: white;
+  cursor: pointer;
+}
+.addNewBtn_roundshape {
+  font-size: 26px;
+  border: 1px solid #dfdfdf;
+  background: white;
+  border-radius: 21px;
+  padding: 0 12px;
+  color: #757272;
+  cursor: pointer;
+}
+.addNewBtn_roundshape_disable {
+  font-size: 26px;
+  border: 1px solid #dfdfdf;
+  border-radius: 21px;
+  padding: 0 12px;
+  color: #757272;
+  cursor: pointer;
+  background: #e4e4e4;
+  cursor: not-allowed;
+}
+
+.menuIcon {
+  width: 15px;
+  margin-right: 0.6rem;
+}
+
+.dx-datagrid-headers {
+  padding-right: 0px !important;
+  border: none !important;
+  /* border-top: 0px !important;
+  border-bottom: 0px !important;
+  border-left: 0px !important;
+  border-right: 0px !important; */
+  /* background: #F5F5F5 !important; */
+  font-weight: bold !important;
+  font-size: 16px !important;
+}
+
+.dx-header-row td {
+  background-color: #3db7e4 !important;
+  color: white !important;
+  font-weight: bold !important;
+}
+.dx-row-alt td {
+  background-color: #c4e8fc !important;
+}
+
+.custom-row {
+  text-align: center;
+}
+
+.swal2-container {
+  z-index: 10000 !important;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.swalToastWidth {
+  position: relative;
+  width: 400px;
+}
+
+/* Dx Data grid */
+dx-data-grid,
+.dx-datagrid-headers {
+  font-size: 11px !important;
+}
+
+.requiredMark::after {
+  content: "*";
+  color: red;
+  margin-left: 5px;
+}
+
+.dropdownIcon {
+  font-size: 20px !important;
+  position: relative !important;
+  /* top: 6px !important; */
+}

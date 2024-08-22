@@ -1,0 +1,90 @@
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+  <ul class="nav">
+    <li class="nav-item cursor">
+      <a class="nav-link">
+        <span
+          ><img
+            class="menuIcon"
+            src="./assets/images/Vector1_off.png"
+            alt="icon"
+        /></span>
+        <span
+          class="menu-title"
+          [routerLink]="['/home']"
+          routerLinkActive="active"
+          #Class="routerLinkActive"
+          >Dashboard</span
+        >
+      </a>
+    </li>
+    <li class="nav-item cursor" *ngFor="let menu of menuList">
+      <a class="nav-link collapsible">
+        <span
+          ><img
+            class="menuIcon"
+            src="./assets/images/Vector2_off.png"
+            alt="icon"
+        /></span>
+        <span class="menu-title"> {{ menu.appRouteName }}</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item cursor" *ngFor="let subMenu of menu.items">
+            <a
+              class="nav-link"
+              [routerLink]="[subMenu.path]"
+              routerLinkActive="active"
+              #Class="routerLinkActive"
+            >
+              <span
+                ><img
+                  class="menuIcon"
+                  src="./assets/images/Vector-5.png"
+                  alt="icon"
+              /></span>
+              {{ subMenu.menudeschelp }}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <!-- <li class="nav-item cursor">
+      <a class="nav-link collapsible">
+        <span><img class="menuIcon" src="../../../../assets/images/Vector2_off.png" alt="icon"></span>
+        <span class="menu-title">Budget</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item cursor"> <a class="nav-link" [routerLink]="['masterData/cohortList']"
+              routerLinkActive="active" #Class="routerLinkActive">
+              <span><img class="menuIcon" src="../../../../assets/images/Vector-5.png" alt="icon"></span>
+              Production
+            </a>
+          </li>
+          <li class="nav-item cursor"> <a class="nav-link" [routerLink]="['geoLocationManagement/geolocationList']"
+              routerLinkActive="active" #Class="routerLinkActive">
+              <span><img class="menuIcon" src="../../../../assets/images/Vector-5.png" alt="icon"></span>
+              RM & PM</a></li>
+          <li class="nav-item cursor"> <a class="nav-link" [routerLink]="['/home/budget-list']" [queryParams]="{type: '4'}"
+              routerLinkActive="active" #Class="routerLinkActive">
+              <span><img class="menuIcon" src="../../../../assets/images/Vector-5.png" alt="icon"></span>
+              Expense</a></li>
+          <li class="nav-item cursor"> <a class="nav-link" [routerLink]="['geoLocationManagement/geolocationList']"
+              routerLinkActive="active" #Class="routerLinkActive">
+              <span><img class="menuIcon" src="../../../../assets/images/Vector-5.png" alt="icon"></span>
+              Common</a></li>
+          <li class="nav-item cursor"> <a class="nav-link" [routerLink]="['geoLocationManagement/geolocationList']"
+              routerLinkActive="active" #Class="routerLinkActive">
+              <span><img class="menuIcon" src="../../../../assets/images/Vector-5.png" alt="icon"></span>
+              Capital</a></li>
+          <li class="nav-item cursor"> <a class="nav-link" [routerLink]="['geoLocationManagement/geolocationList']"
+              routerLinkActive="active" #Class="routerLinkActive">
+              <span><img class="menuIcon" src="../../../../assets/images/Vector-5.png" alt="icon"></span>
+              Sales</a></li>
+        </ul>
+      </div>
+    </li> -->
+  </ul>
+</nav>
